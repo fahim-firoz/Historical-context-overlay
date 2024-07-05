@@ -3,6 +3,7 @@
   "name": "Historical Context Overlay",
   "version": "1.0",
   "description": "Provides historical context for the content you're reading.",
+  "author": "Fahim Firoz",
   "permissions": [
     "activeTab",
     "contextMenus",

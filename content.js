@@ -43,11 +43,11 @@ function displayContextOverlay(context) {
   overlay.style.backgroundColor = "white";
   overlay.style.color = "black";
   overlay.style.border = "1px solid black";
-  overlay.style.zIndex = 10000; // Ensure the overlay is on top of other elements
-  overlay.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)"; // Add shadow for better visibility
-  overlay.style.fontSize = "14px"; // Ensure the font size is readable
-  overlay.style.maxWidth = "300px"; // Prevent the overlay from being too wide
-  overlay.style.overflowY = "auto"; // Add scroll if content is too long
+  overlay.style.zIndex = 10000;
+  overlay.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)";
+  overlay.style.fontSize = "14px";
+  overlay.style.maxWidth = "300px";
+  overlay.style.overflowY = "auto";
 
   const description = document.createElement("p");
   description.textContent = context.description;
@@ -65,11 +65,11 @@ function displayErrorOverlay(message) {
   overlay.style.backgroundColor = "red";
   overlay.style.color = "white";
   overlay.style.border = "1px solid black";
-  overlay.style.zIndex = 10000; // Ensure the overlay is on top of other elements
-  overlay.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)"; // Add shadow for better visibility
-  overlay.style.fontSize = "14px"; // Ensure the font size is readable
-  overlay.style.maxWidth = "300px"; // Prevent the overlay from being too wide
-  overlay.style.overflowY = "auto"; // Add scroll if content is too long
+  overlay.style.zIndex = 10000;
+  overlay.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)";
+  overlay.style.fontSize = "14px";
+  overlay.style.maxWidth = "300px";
+  overlay.style.overflowY = "auto";
 
   const errorMessage = document.createElement("p");
   errorMessage.textContent = message;
