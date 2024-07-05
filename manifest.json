@@ -5,7 +5,8 @@
   "description": "Provides historical context for the content you're reading.",
   "permissions": [
     "activeTab",
-    "contextMenus"
+    "contextMenus",
+    "scripting"
   ],
   "background": {
     "service_worker": "background.js"
@@ -16,12 +17,11 @@
       "js": ["content.js"]
     }
   ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
+    "default_title": "Historical context"
   }
 }
